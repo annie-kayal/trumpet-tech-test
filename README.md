@@ -41,3 +41,9 @@ Upon a widget creation, this simply pops onto the page quite aburptly. I would c
 - Styling considerations when editing widget content
 
 There is currently no visual indication that when the text content of the widget is being edited. This could be improved upon by some small styling elements added such as: - Upon widget selection, exisiting content could change to be a different colour to show it is not being edited - Border could be added in line with branding.
+
+- API Integration
+
+There is the possibility to include a BE to store and update the widgets. The DB in this instance could be either SQL or noSQL and could leverage React's newer features such as `useSWR` to fetch data whilst prioriting cache first.
+
+An alternative approach in updating a widget content could also include the usage of React's `useTransition` hook. This could provide some visual display on when the widget is being saved in the database. We also could consider if the page behaviour should include waiting before the save is complete before allowing another widget to be edited or not by using this hook.
