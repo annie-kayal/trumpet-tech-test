@@ -5,15 +5,6 @@
   height: 100svh;
   padding: 1.25rem;
   font-family: var(--font-geist-sans);
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  border: 3px solid #DD2A1D;
-  border-radius: 10px;
-  width: 100svw;
-  padding: 20px;
   overflow: scroll;
 }
 
