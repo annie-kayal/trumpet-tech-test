@@ -3,11 +3,11 @@ import { fireEvent, render, screen, waitFor } from "@testing-library/react";
 import {
   TUseCreateOrViewWidgetContext,
   useCreateOrViewWidgetContext,
-} from "../../../context/CreateOrViewWidgetContext";
-import { TWidget } from "../types";
+} from "src/contexts/CreateOrViewWidgetContext";
+import { TWidget } from "components/Widgets/types";
 import { TextWidget } from ".";
 
-jest.mock("../../../context/CreateOrViewWidgetContext");
+jest.mock("src/contexts/CreateOrViewWidgetContext");
 const mockedUseCreateOrViewWidgetContext =
   useCreateOrViewWidgetContext as jest.Mock<TUseCreateOrViewWidgetContext>;
 

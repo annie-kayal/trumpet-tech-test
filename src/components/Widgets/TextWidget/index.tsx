@@ -1,7 +1,7 @@
 import React, { ReactElement, useState } from "react";
+import { useCreateOrViewWidgetContext } from "src/contexts/CreateOrViewWidgetContext";
 import styles from "./textwidget.module.css";
-import { useCreateOrViewWidgetContext } from "@/context/CreateOrViewWidgetContext";
-import { TWidget } from "../types";
+import { TWidget } from "components/Widgets/types";
 
 export type TTextWidget = {
   widget: TWidget;

@@ -1,5 +1,5 @@
 import React, { ReactElement } from "react";
-import styles from "./addButton.module.css";
+import styles from "components/Widgets/AddWidgetButton/addButton.module.css";
 
 type TAddWidgetButton = {
   onClick: () => void;

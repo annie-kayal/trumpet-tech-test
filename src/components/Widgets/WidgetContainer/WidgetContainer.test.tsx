@@ -1,9 +1,9 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import { TWidget } from "../types";
+import { TWidget } from "components/Widgets/types";
 import { WidgetContainer } from ".";
 
-jest.mock("../TextWidget", () => ({
+jest.mock("components/Widgets/TextWidget", () => ({
   TextWidget: () => <div>Text Widget</div>,
 }));
 

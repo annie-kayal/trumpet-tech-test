@@ -4,18 +4,18 @@ import { render, screen } from "@testing-library/react";
 import {
   TUseCreateOrViewWidgetContext,
   useCreateOrViewWidgetContext,
-} from "../../context/CreateOrViewWidgetContext";
+} from "src/contexts/CreateOrViewWidgetContext";
 import { Widgets } from ".";
 
-jest.mock("./AddWidgetButton", () => ({
+jest.mock("components/Widgets/AddWidgetButton", () => ({
   AddWidgetButton: () => <div>Add Widget Button</div>,
 }));
 
-jest.mock("./WidgetContainer", () => ({
+jest.mock("components/Widgets/WidgetContainer", () => ({
   WidgetContainer: () => <div>Widget Container</div>,
 }));
 
-jest.mock("../../context/CreateOrViewWidgetContext");
+jest.mock("src/contexts/CreateOrViewWidgetContext");
 const mockUseCreateOrViewWidgetContext =
   useCreateOrViewWidgetContext as jest.Mock<TUseCreateOrViewWidgetContext>;
 

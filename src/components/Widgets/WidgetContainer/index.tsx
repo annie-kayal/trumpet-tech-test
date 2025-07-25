@@ -1,7 +1,7 @@
 import React, { memo } from "react";
+import { TWidget } from "components/Widgets/types";
+import { TextWidget } from "components/Widgets/TextWidget";
 import styles from "./widgetContainer.module.css";
-import { TWidget } from "../types";
-import { TextWidget } from "../TextWidget";
 
 export const WidgetContainer = memo(function widgetContainer({
   widgets,
