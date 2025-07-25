@@ -26,23 +26,26 @@ A script is available to run all tests via your terminal of choice. After naviga
 
 If there was further time for this project, the following implementations would be considered:
 
-- Allowing for Drag and Drop between Widgets
+1. Allowing for Drag and Drop between Widgets
 
 Implementing the above would allow users to prioritise widgets quickly without manually having to change the text. This would be a more interactive element of the application which makes it easier to use for those creating widgets.
 
-- Expanding Widgets to have a type
+2. Expanding Widgets to have a type
 
 The brief of this project was to include basic text widgets, however this could be limiting for users. Widgets could have various types of content within them such as images, videos or tables. A future consideration would be to consider widgets to have the ability to have various types of content which would include extending the `TWidget` to include a `type` attribute.
 
-- Animations
+3. Animations
 
 Upon a widget creation, this simply pops onto the page quite aburptly. I would choose to add some simple animation when a new widget appears on the window for aesthetic purposes.
 
-- Styling considerations when editing widget content
+4. Styling considerations when editing widget content
 
-There is currently no visual indication that when the text content of the widget is being edited. This could be improved upon by some small styling elements added such as: - Upon widget selection, exisiting content could change to be a different colour to show it is not being edited - Border could be added in line with branding.
+There is currently no visual indication that when the text content of the widget is being edited. This could be improved upon by some small styling elements added such as:
 
-- API Integration
+- Upon widget selection, exisiting content could change to be a different colour to show it is not being edited
+- Border could be added in line with branding.
+
+5. API Integration
 
 There is the possibility to include a BE to store and update the widgets. The DB in this instance could be either SQL or noSQL and could leverage React's newer features such as `useSWR` to fetch data whilst prioriting cache first.
 
