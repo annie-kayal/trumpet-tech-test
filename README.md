@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Trumpet Tech Test
 
-## Getting Started
+This project has been created with [Next.js](https://nextjs.org), leveraging the app router. The app has been seperated with two additional folders, components and contexts.
 
-First, run the development server:
+Unit testing has been integrated within this project using [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Application Structure:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+`Components`: A singular directory housing individual building block components used to create the application. Each of these are accompanied with a unit test in their directories.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+`Contexts`: This directory contains the `CreateOrViewWidgetContext`. This file utilises React's ContextAPI, where all the logic for creating and updating a widget is stored. This also has it's own individual unit test.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Running the application
 
-## Learn More
+First, install the dependancies of the project using `npm install`. This should populate your `node_modules` and will allow the project to run.
 
-To learn more about Next.js, take a look at the following resources:
+After installation is successful - the project can be ran using `npm run dev`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Open [http://localhost:3000](http://localhost:3000) with your browser of choice to view the bundled application. A singular button should be visible prompting to add a widget.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Running Unit Tests
 
-## Deploy on Vercel
+A script is available to run all tests via your terminal of choice. After navigating to the root directory of this project, running `npm run test` in the command line will run the unit tests.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Future considerations
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+If there was further time for this project, the following implementations would be considered:
+
+- Allowing for Drag and Drop between Widgets
+
+Implementing the above would allow users to prioritise widgets quickly without manually having to change the text. This would be a more interactive element of the application which makes it easier to use for those creating widgets.
+
+- Expanding Widgets to have a type
+
+The brief of this project was to include basic text widgets, however this could be limiting for users. Widgets could have various types of content within them such as images, videos or tables. A future consideration would be to consider widgets to have the ability to have various types of content which would include extending the `TWidget` to include a `type` attribute.
+
+- Animations
+
+Upon a widget creation, this simply pops onto the page quite aburptly. I would choose to add some simple animation when a new widget appears on the window for aesthetic purposes.
+
+- Styling considerations when editing widget content
+
+There is currently no visual indication that when the text content of the widget is being edited. This could be improved upon by some small styling elements added such as: - Upon widget selection, exisiting content could change to be a different colour to show it is not being edited - Border could be added in line with branding.
