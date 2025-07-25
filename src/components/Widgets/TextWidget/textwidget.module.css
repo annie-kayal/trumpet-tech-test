@@ -1,5 +1,5 @@
 .widget {
-    width: 100%;
+    width: fit-content;
     border: none;
     resize: none;
     padding: 1rem;
@@ -10,7 +10,9 @@
 }
 
 div.widgetContainer {
+    width: fit-content;
     border: 2px solid black;
     border-radius: 0.25rem;
     margin-top: 1rem;
+    margin-right: 0.75rem;
 }

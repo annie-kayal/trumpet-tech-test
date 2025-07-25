@@ -1,0 +1,11 @@
+button.addWidget {
+  height:min-content;
+  width: max-content;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: #AE6F6A;
+  margin-right: 1rem;
+  box-shadow: none;
+  outline: none;
+  border: none;
+}

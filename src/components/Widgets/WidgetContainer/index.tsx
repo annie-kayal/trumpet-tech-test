@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import styles from "../../../app/page.module.css";
+import styles from "./widgetContainer.module.css";
 import { TWidget } from "../types";
 import { TextWidget } from "../TextWidget";
 
@@ -13,7 +13,7 @@ export const WidgetContainer = memo(function widgetContainer({
   }
 
   return (
-    <div className={styles.main}>
+    <div className={styles.widgetContainer}>
       {widgets.map((widget) => (
         <TextWidget key={widget.id} widget={widget} />
       ))}
